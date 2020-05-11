@@ -1,0 +1,17 @@
+Task 0
+No iterations, just accessing 2 values => O(1)
+
+Task 1
+4 time getting the phone number column (O(n)) and 4 times adding to the set(O(n)) => O(8n) simplified to O(n)
+
+Task 2
+2 iterations, one to compute the duration and one to find the longest phone number => O(2n) => O(n)
+
+Task 3
+Multiple iterations on a shrinking dataset => Worst case scenario O(n)
+
+Task 4
+Adding the columns to the set is O(n) for getting the column and O(n) for adding it to the set => O(2n)
+The difference between sets is O(n-s) , n being the length of the first set and s the length of the second set 
+That operation is done 3 times, in the worst case no element from N is common with S in all 3 cases so it would be 
+O(3n-3s), resulting O(2n * 4) + O(3n - 3s) => O(xn) simplified to O(n) 
